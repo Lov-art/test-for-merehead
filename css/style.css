@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+main {
+    background-color: #f5f6fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+    background: #fff;
+}
+
+.authorization {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 400px;
+}
+
+.line {
+    align-self: stretch;
+    width: 1px;
+    background: black;
+    margin: 0 10px;
+}
+
+.title {
+    margin-top: 8px;
+}
+
+.content {
+    margin-top: 37px;
+    padding: 0 37px 100px 37px;
+    background-color: #f5f6fa;
+}
+
+.user-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 50px;
+    background-color: #ffffff;
+}
+
+.user-value, .user-actions {
+    width: 45%;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.user-info {
+    width: 100%;
+    padding: 25px 27px 0 27px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.user-downloads {
+    width: 50%;
+    background-color: #ffffff;
+    margin-top: 80px;
+}
+
+.tab {
+    display: flex;
+}
+
+.tab button {
+    flex: 1 0 25%;
+    background-color: #2b2b2b;
+    cursor: pointer;
+    height: 51px;
+    margin-left: 3px;
+    transition: background-color 0.3s;
+    color: #ccc;
+    font-family: Lato;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tab button:first-child {
+    margin-left: 0;
+}
+
+.tab button.active {
+    background-color: #fff;
+    color: #2b2b2b;
+    outline: none;
+}
+
+.btn {
+    position: relative;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: #c3344c;
+    line-height: 38px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.js-canvi-open-button--right {
+    transition: transform 1s;    
+}
+
+.is-canvi-open .js-canvi-open-button--right {
+    transform: translateX(-50%); 
+}
+
+.btn i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    line-height: 100%;
+}
+
+
+.btn--large {
+    padding: 0 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+@media (min-width: 840px) {
+    .btn--large {
+        height: 52px;
+        line-height: 52px;
+    }
+}
+
+.btn--ghost {
+    border: 3px solid #fff;
+    background: transparent;
+}
+
+.authorization div a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 1.3em;
+    display: block;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: Lato;
+    font-weight: 600;
+    line-height: 3.25;
+    text-align: left;
+    color: #2b2b2b;
+    font-size: 1.5em;
+    padding-left: 5%;
+    background-color: #ffffff;
+}
+
+.user-info p {
+    font-family: Lato;
+    font-size: 1em;
+    line-height: 1.88;
+    color: #2b2b2b;
+}
+
+.user-info p span {
+    font-weight: bold;
+}
+
+.tabcontent {
+    display: none;
+    margin-top: 25px;
+}
+
+.tabcontent form{
+    margin-left: 45px;
+}
+
+.form {
+    margin-top: 1%;
+}
+
+.form-lock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: dotted 2px #f0b90b;
+    background-color: #fffaec;
+}
+.form-content{
+    margin-top: 11px;
+}
+
+.form-lock .form-content {
+    display: flex;
+    width: 100%;
+}
+
+.form-lock label {
+    color: #d4a307;
+    margin-bottom: 1%;
+}
+
+
+.form-lock label i {
+    margin-right: 10px;
+}
+
+.form-lock input {
+    width: 70%;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-lock input:placeholder-shown {
+    padding: 5px 15px;
+    border: solid 1px #f6d261;
+    color: #d4a307;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #d4a307
+}
+
+input[type="text"]:-ms-input-placeholder {
+    color: #d4a307
+}
+
+input[type="text"]::-ms-input-placeholder {
+    color: #d4a307
+}
+
+input[type="text"]::placeholder {
+    color: #d4a307
+}
+
+
+.form-lock button {
+    border-radius: 1px;
+    background-color: #d4a307;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    width: 15%;
+    height: 30px;
+    margin-left: 10px;
+    outline: none;
+
+}
+
+.form-Reject {
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: dotted 2px #c3344c;
+    background-color: #fffaec;
+}
+
+.form-Reject label {
+    color: #c3344c;
+    margin-bottom: 2%;
+}
+
+.form-Reject label i {
+    margin-right: 10px;
+}
+
+.form-Reject input {
+    width: 70%;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-Reject input:placeholder-shown {
+    padding: 5px 15px;
+    border: solid 1px #c3344c;
+    color: #c3344c;
+}
+
+.form-Reject input[type="text"]::-webkit-input-placeholder {
+    color: #c3344c
+}
+
+.form-Reject input[type="text"]:-ms-input-placeholder {
+    color: #c3344c
+}
+
+.form-Reject input[type="text"]::-ms-input-placeholder {
+    color: #c3344c
+}
+
+.form-Reject input[type="text"]::placeholder {
+    color: #c3344c
+}
+
+
+.form-Reject button {
+    border-radius: 1px;
+    background-color: #c3344c;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    width: 15%;
+    height: 30px;
+    margin-left: 10px;
+    outline: none;
+
+}
+
+.user-value-info table {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.user-value-info table tr {
+    line-height: 2.5em;
+}
+
+.user-value-info table th {
+    text-align: left;
+}
+
+.with_color {
+    background-color: #f5f6fa;
+}
+
+.bold {
+    font-family: Lato;
+    font-size: 0.8em;
+    font-weight: 900;
+    color: #2b2b2b;
+    padding-left: 45px;
+}
+
+#table-value {
+    font-family: Lato;
+    font-size: 0.8em;
+    color: #2b2b2b;
+
+}
+
+.user-value-info-btn {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#Approve {
+    background-color: #8dc63f;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2% 5%;
+    outline: none;
+    margin-right: 5%;
+    width: 30%;
+}
+
+#Reject {
+    background-color: #ea3037;;
+    font-family: Lato;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 2% 5%;
+    outline: none;
+    width: 30%;
+}
+
+.title-photo h3{
+    font-family: Lato;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 13px;
+}
+
+.photo{
+    width: 22%;;
+    background-color: #f3f3f3;
+    margin-bottom: 18px;
+}
+
+.photo i{
+    font-size: 2em;
+    line-height: 2.29;
+    color: rgba(39, 43, 51, 0.51);
+    padding: 47px 90px;
+}
+
+@media (min-width: 1440px) and (max-width: 1800px) {
+    .photo {
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1080px) and (max-width: 1440px) {
+    .photo {
+        width: 42%;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .user-value, .user-actions {
+        width: 95%;
+    }
+    .user-downloads {
+        display: none;
+    }
+
+    .user-actions {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .is-canvi-open .js-canvi-open-button--right {
+        transform: translateX(-150%);
+    }
+    .authorization {
+        margin-right: 40px;
+    }
+
+}
+
+@media (max-width: 425px) {
+
+    .tab {
+        flex-direction: column;
+    }
+
+    .tab button {
+        height: 51px;
+        margin-left: 0;
+        padding: 15px 0;
+        margin-bottom: 5px; 
+    }
+    .tabcontent form {
+        margin-left: 0;
+    
+    }
+    .tabcontent form input{
+        width: 90%;
+    }
+    .tabcontent form button{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .form-lock .form-content {
+        flex-direction: column;
+    }
+    .form-Reject .form-content {
+        flex-direction: column;
+    }
+    .form-lock label {
+        font-size: 0.7em;
+    }
+    .form-Reject label {
+        font-size: 0.7em;
+    }
+
+}
+
